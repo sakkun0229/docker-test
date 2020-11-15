@@ -1,0 +1,7 @@
+dockerコマンド メモ
+
+docker build -t testimg .
+
+docker run -d -p 8080:80 --name test-container testimg
+
+docker run -it -d -p 8080:80 --name test-container testimg /bin/bash
